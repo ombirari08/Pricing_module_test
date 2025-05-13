@@ -1,0 +1,37 @@
+<!-- pricing/templates/pricing/modify_pricing_config.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Pricing Configuration</title>
+</head>
+<body>
+    <h1>Modify Pricing Configuration</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="distance_base_price">Distance Base Price:</label>
+            <input type="number" id="distance_base_price" name="distance_base_price" value="{{ config.distance_base_price }}" required>
+        </div>
+        <div>
+            <label for="distance_base_km">Distance Base KM:</label>
+            <input type="number" id="distance_base_km" name="distance_base_km" value="{{ config.distance_base_km }}" required>
+        </div>
+        <div>
+            <label for="distance_additional_price">Distance Additional Price:</label>
+            <input type="number" id="distance_additional_price" name="distance_additional_price" value="{{ config.distance_additional_price }}" required>
+        </div>
+        <div>
+            <label for="waiting_charges">Waiting Charges:</label>
+            <input type="number" id="waiting_charges" name="waiting_charges" value="{{ config.waiting_charges }}" required>
+        </div>
+        <div>
+            <label for="time_multiplier_factor">Time Multiplier Factor (JSON format):</label>
+            <input type="text" id="time_multiplier_factor" name="time_multiplier_factor" value="{{ config.time_multiplier_factor }}" required>
+        </div>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>

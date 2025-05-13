@@ -1,0 +1,72 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+*.db
+media/
+staticfiles/
+__init__.py
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+*.env.*
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.bak
+*.swp
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.cache/
+
+# Coverage reports
+.coverage
+.coverage.*
+nosetests.xml
+pytest.xml
+test_*.xml
+
+# MyPy
+.mypy_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/

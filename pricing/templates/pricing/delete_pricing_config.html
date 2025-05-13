@@ -1,0 +1,19 @@
+<!-- pricing/templates/pricing/delete_pricing_config.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Pricing Configuration</title>
+</head>
+<body>
+    <h1>Are you sure you want to delete this pricing configuration?</h1>
+    <p><strong>Configuration for {{ config.day_of_week }}</strong></p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+    </form>
+    <a href="{% url 'pricing:pricing_calculator_page' %}">Cancel</a>
+</body>
+</html>
