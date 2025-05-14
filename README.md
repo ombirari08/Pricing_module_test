@@ -31,3 +31,14 @@ This project is a Django web application for configuring, calculating, modifying
 ```bash
 git clone https://github.com/yourusername/pricing-config-django.git
 cd Pricing_module_test
+
+| Field                  | Sample Value                             |
+| ---------------------- | ---------------------------------------- |
+| Day of Week            | Monday                                   |
+| Base Price             | 50                                       |
+| Base KM                | 5                                        |
+| Additional KM Price    | 10                                       |
+| Time Multiplier Factor | `{"0-30": 1, "31-60": 1.5, "61-120": 2}` |
+| Waiting Charges        | 5                                        |
+| Is Active              | ✅ Yes                                    |
+
