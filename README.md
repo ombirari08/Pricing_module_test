@@ -30,4 +30,4 @@ This project is a Django web application for configuring, calculating, modifying
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/pricing-config-django.git
-cd pricing-config-django
+cd Pricing_module_test
